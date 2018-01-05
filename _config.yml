@@ -5,14 +5,15 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# theme: minimal-mistakes-jekyll
+minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "jsieber7"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Data Friendly"
+description              : "Personal Site."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -62,9 +63,9 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : jakestr9000
 facebook:
-  username               :
+  username               : jacob.sieber.54
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -84,32 +85,32 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "Jacob Sieber"
+  avatar           : "/assets/images/Profile1.jpg"
+  bio              : "Aspiring Data Scientist."
+  location         : "Charlotte, NC"
+  email            : "Jakestr9000@gmail.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : 'jacob.sieber.54'
   foursquare       :
-  github           :
+  github           : 'jsieber7'
   gitlab           :
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "jacob-sieber"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          :
+  twitter          : 'jakestr9000'
   vine             :
   weibo            :
   xing             :
