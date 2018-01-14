@@ -5,18 +5,18 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-# theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "jsieber7"
-title_separator          : "-"
-name                     : "Data Friendly"
+title                    : "Jacob Sieber"
+title_separator          : "|"
+name                     : "Jacob Sieber"
 description              : "Personal Site."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://jsieber7.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : # https://github.com/jSieber7/jsieber7.github.io
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -86,7 +86,7 @@ analytics:
 # Site Author
 author:
   name             : "Jacob Sieber"
-  avatar           : "/assets/images/Profile1.jpg"
+  avatar           : "/assets/images/Profile_pic_small.jpg"
   bio              : "Aspiring Data Scientist."
   location         : "Charlotte, NC"
   email            : "Jakestr9000@gmail.com"
