@@ -1,4 +1,4 @@
-# Tutorial: How to easily get cryptocurrency data in Python
+# Python Tutorial: How to easily get cryptocurrency data in Python
 *An accompanying Jupyter Notebook will be added a later date*
 
 While there are many existing APIs to find live cryptocurrency data, there seems to be a lack of APIs that allow a user to download the historcial price and volume of a given coin. Fortunately, a website called https://coinmarketcap.com/ gives us the historical information of over 1000 coins in a neat table. The question is: how do we get this table onto our own computers in an easily readable way for the coins and type periods we want?
