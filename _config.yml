@@ -10,14 +10,14 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Jacob Sieber"
+title                    : "Data Blog"
 title_separator          : "|"
 name                     : "Jacob Sieber"
-description              : "Personal Site."
+description              : "Personal Blog."
 url                      : "https://jsieber7.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # https://github.com/jSieber7/jsieber7.github.io
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/data-center-cooling.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -87,9 +87,9 @@ analytics:
 author:
   name             : "Jacob Sieber"
   avatar           : "/assets/images/Profile_pic_small.jpg"
-  bio              : "Aspiring Data Scientist."
+  bio              : "Using Data to Illuminate the World"
   location         : "Charlotte, NC"
-  email            : "Jakestr9000@gmail.com"
+  email            : "JacobSieber7@gmail.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
