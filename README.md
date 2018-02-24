@@ -1,4 +1,2 @@
 # jsieber7.github.io
-Personal website using the excellent minimal mistakes theme:
-
-My Blog, defineitly cool to give a check out. It's pretty good, honest.
+Personal blog using the excellent minimal mistakes theme. As of right now contains some beginner data science tutorials, great place to get started for those who want to learn more.
