@@ -10,7 +10,7 @@ In the new world of self driving cars, phones embedded with artificial intellige
 
 I am one among the many who study this data with statistical techniques, computer programs, and whatever contextual knowledge I can scrounge up. The beautiful thing about data analytics, is that there is an incredible amount of free data, professional software free of charge, and a new problem to solved. Anyone with enough patience and free time can participate. I aim to keep abreast of the current data science environment and clearly communicate the basics here on my blog.
 
-I hold a degree in finance and am a current masters student at UNC Charlotte. I do have some MOOC certifications, although now I prefer learning through the more thorough method of books. My MOOC certifications are linked below. While I have not taken MOOC courses for SQL and R, I do have experience coding in these languages. In fact, I do enjoy coding in R more than Python (thanks to Hadley Wickham). I mostly program in R now unless there is a particular Python package or functionality I would like to use. And when dealing with large data, SQL is a lifesaver.
+I hold a degree in finance and am a current masters student at UNC Charlotte. I do have some MOOC certifications, although now I prefer learning through the more thorough method of books. My MOOC certifications are linked below. While I have not taken MOOC courses for SQL and R, I do have experience coding in these languages. In fact, I do enjoy coding in R more than Python (thanks to Hadley Wickham). I mostly program in R now unless there is a particular Python package or functionality (mostly PyTorch) I would like to use. And when dealing with large data, SQL is a lifesaver.
 
 
 ## Datacamp
