@@ -3,7 +3,7 @@
 ### *December 15, 2017 (Updated Feburary 27)*
 
 
-# Part 1: Getting our data
+# Part 1: Getting our Data
 ***
    When building a data science project, there comes times when we want to get data outside of what is readily available. Often times, we want data from sites like Twitter or Facebook. These sites provide there own API (programming interface) to easily get data from through languages such as R and python. When there are no APIs (or APIs don't provide enough data), we can obtain data through web scraping. Don't let web scraping intimidate you, through libraries such as Beautiful Soup, web scraping has never been easier. 
 
