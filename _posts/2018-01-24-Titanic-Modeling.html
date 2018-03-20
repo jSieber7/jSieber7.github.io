@@ -393,7 +393,7 @@ models &lt;- c('ranger','kknn', 'glmnet', 'nb')</code></pre>
   }</code></pre>
 <div id="very-nice-we-have-our-models-but-which-one-is-the-best" class="section level3">
 <h3>Very nice! We have our models, but which one is the best?</h3>
-<p>We can use caret’s summary and boxplot visualtion to see. It appears as though the radom forest performed the best.</p>
+<p>We can use caret’s summary and boxplot visualization to see. It appears as though the radom forest performed the best.</p>
 <pre class="r"><code>model_list &lt;- list(Linear_model = model_glmnet,K_neighbors = model_kknn,
                    Naive_bayes = model_nb, Random_forest = model_ranger)
 
