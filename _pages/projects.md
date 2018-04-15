@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: splash
 permalink: /projects/
 title: "Projects"
 ---
@@ -8,7 +8,7 @@ Right now, there are two projects available to inspect.
 
 ## Predicting Loan Status
 
-The accompanying Python scripts for a report about predicting loan status. The data is from Lending Club, which is a popular peer to peer lending service. The goal of this project was to predict the loan status based upon given features.
+The accompanying Python scripts for an assigned project about predicting loan status. The data is from Lending Club, which is a popular peer to peer lending service. The goal of this project was to predict the loan status based upon given features.
 
 [Part 1: Exploration](/explore/)
 
@@ -16,6 +16,6 @@ The accompanying Python scripts for a report about predicting loan status. The d
 
 ## Shiny App: Kaggler Survey 
 
-This app is still a work in progress, currently there is a map visualization that compares Kagglers country by country across different attributes.
+This is a small Shiny App that visually describes Kagglers from the Kaggle Survey 2017.
 
 [Kaggler Shiny App](/shiny/)

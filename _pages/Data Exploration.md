@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: splash
 permalink: /explore/
 title: "Exploring the Data"
 ---

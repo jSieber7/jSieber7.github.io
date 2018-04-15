@@ -1,3 +1,9 @@
+---
+layout: single
+classes:
+  - wide
+---
+
 *Learn how to get historical crypto data off the web.*
 ### *Jacob Sieber*
 ### *December 15, 2017 (Updated Feburary 27)*
