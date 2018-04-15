@@ -4,7 +4,7 @@ permalink: /projects/
 title: "Projects"
 ---
 
-Right now, there are two projects available to inspect.
+Right now, there are two projects available to take a look at.
 
 ## Predicting Loan Status
 
