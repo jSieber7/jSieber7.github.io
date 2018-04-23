@@ -27,9 +27,8 @@ from https://www.gapminder.org/tools/</i></figcaption>
 
 Hopefully, now the value of detailed visualisations is clear. But, what tools are the best at creating powerful graphics? For visualisations that are both interactive and readily presentable, there are three primary tools that I consider to be the strongest canidates with their own distinct strengths and weaknesses. They are Tableau, Shiny, and JavaScript's D3 library.
 
-<a href="https://www.tableau.com/"><img src="https://i.imgur.com/GYVuGFM.jpg" title="Tableau's Logo" height="300" width = "500" /></a>
-
 # Tableau
+<a href="https://www.tableau.com/"><img src="https://i.imgur.com/GYVuGFM.jpg" title="Tableau's Logo" height="300" width = "500" /></a>
 
 Tableau is a tool that is both intinutive and powerful tool to use.  Connecting to a remote server, creating impressive visualizations, and custominzing them all within an interactive dashboard has never been as quick or easy to do. The primary strength here is the simplicity in designing presenetable visualizations. Typically, there is no coding at all involved in projects, aside from a few calculated columns. This means that nearly anyone can pick up Tableau and create
 
@@ -88,6 +87,7 @@ There are hundreds of packages in R that have a visualization component to them.
 
 <a href="https://shiny.rstudio.com/gallery/genome-browser.html"><img src="https://i.imgur.com/e4vsPer.png" title="Mapping Genomes" /></a>
 
+
 ## __Cons__
 
 ### Learning Curve
@@ -101,21 +101,37 @@ R-Shiny provides a relatively simple way to create web-apps to share visuals and
 
 # JavaScript
 
-The reigning king of web visualization. Most
+<a href="https://www.javascript.com/"><img src="https://i.imgur.com/hR3vzAQ.png" title="JavaScript" /></a>
+
+The reigning king of web visualization. Through JavaScript and D3, one of a kind visualizations can be created in an open source environment. JavaScript has an incredible amount of libraries that can be utilized in order to get the right visual 
+
+Whenever you see an interactive visual 
 
 ## __Pros__
 
-# The language based on the Interactive Web
+### The language based on the Interactive Web
 
-Through D3, an open source library, ..........
+<a href="http://christophermanning.org/projects/voronoi-diagram-with-force-directed-nodes-and-delaunay-links"><img src="https://i.imgur.com/tkRon6a.png" title="Voronoi Diagram with Force Directed Nodes and Delaunay Links" /></a>
+
+Through D3 and other popular JavaScript libraries, professional web app visualizations can be made. JavaScript allows anyone with a current web browser to view visualizations custom built from the ground up. These custom visualizations can be built with much more cust
+
+### A greater amount of visual tools to use
+
+Compared to other tools such as R, Python, or Tableau, JavaScript has more comprenhensive libraries decidated to creating interactive web-visualizations. This allows an experienced JavaScript coder to create a wider range of visualizations with more intutive interactivity. 
+
 
 ## __Cons__
 
 
-# Lack of true data anylsis tools
+### Lack of true data anylsis tools
 
 While JavaScript does a few libraries decicated to munging through data, true data anaylsis must be done through other means, such as R or Microsoft Azure. There is no nice visual integrations with model building here. Decicating the time to learning a new software language purely for web-interactive visualizations may not be the best use of time for someone who is busy, espcially since many of the several popular JavaScript visualizations retain most of their functionailty through R.
 
+### Learning Curve
 
-As seen through the report
+JavaScript isn't a terriblly difficult language to learn, however it will take time to become accusomed to creating visualizations. Custom built visuals in D3 can often times contain a great deal of code, and require a deep understanding of the D3 framework. While JavaScript does have some utility useful outside of visualizations, it is mostly in web-development. So, analysts may not be able to get as much milage out of JavaScript as they could with R, Python, or Java.
+
+# Conclusion
+
+As seen throughout the post, different data visualization tools have different strengths and weakness. Moreover, these different tools can be integrated with each other. This allows the different strengths of these tools to complement one another and weakness to be compensated for. Ideally, someone well versed in visualization would have a brief working knowledge with these tools.
 
