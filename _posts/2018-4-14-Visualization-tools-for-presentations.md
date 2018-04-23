@@ -99,11 +99,23 @@ While R is a relatively simple language to operate in, it is still it's own prog
 R-Shiny provides a relatively simple way to create web-apps to share visuals and analysis, however many of the greatest visual tools are contained within JavaScript. Many of the most advanced R web-visualizations are wrappers around JavaScript. There are many great visuals that JavaScript has in D3 that R does not have a package for. 
 
 
+# JavaScript
+
+The reigning king of web visualization. Most
+
+## __Pros__
+
+# The language based on the Interactive Web
+
+Through D3, an open source library, ..........
+
+## __Cons__
 
 
+# Lack of true data anylsis tools
+
+While JavaScript does a few libraries decicated to munging through data, true data anaylsis must be done through other means, such as R or Microsoft Azure. There is no nice visual integrations with model building here. Decicating the time to learning a new software language purely for web-interactive visualizations may not be the best use of time for someone who is busy, espcially since many of the several popular JavaScript visualizations retain most of their functionailty through R.
 
 
-
-
-R visualization packages
+As seen through the report
 
