@@ -72,6 +72,38 @@ This is another data visualiztion tool that functions through a GUI as well, and
 
 <a href="https://shiny.rstudio.com"><img src="https://i.imgur.com/gwvnTS8.png" title="Shiny" /></a>
 
-R-Shiny is where trade off between difficulty and freedom visualization design begins to become apparent. When RStudio designed this package, the central idea was to create interactive web-based dashboards without needing to learn web-base coding HTML, CSS, and JavaScript. In fact, most of the code in Shiny serves as a wrapper around these web-based langauges. Additionaly, many of the R packages used in creating interactive visuals are merely wrappers around popular JavaScript D3 libraries. So, it makes sense that the capibility of Shiny can be greatly extended by using web-based languages. However, learn HTML , CSS, and JavaScript is not neccessary to get a great deal of mileage out of Shiny.
+R-Shiny is where trade off between difficulty and freedom in visualization design begins to become apparent. When RStudio designed this package, the central idea was to create interactive web-based dashboards for analysis all through R. Instead of creating new web functionailty in R, most of the code in Shiny serves as a wrapper around the web-based langauges html, css, and JavaScript. Additionaly, many of the R packages used in creating interactive visuals are merely wrappers around popular JavaScript D3 libraries. So, it makes sense that the capibility of Shiny can be greatly extended by using web-based languages. However, knowledge of HTML, CSS, and JavaScript are not neccessary to get a great deal of mileage out of Shiny.
+
+
+
+## __Pros__
+
+### Strong Data Analysis Stack
+
+With all of the powerful and unique packages for R, data transformation and modeling are easily integrated into Shiny dashboards. Almost any machine learning model has methods to visualize metrics. Rather than exporting visualizations to another visual tool, R can filter, transform, model and visualize data on the fly within the dashboard.
+
+### Abundance of Visualization R Packages
+
+There are hundreds of packages in R that have a visualization component to them. If you are using a tool like Tableau or Power BI, if the developers did not explicitly program the visual tool themselves, you will have to use another tool. R packages contain the work of hundreds of different contributers and can feature some of the lastest in research. Many advanced visualizations have a leaf 
 
 <a href="https://shiny.rstudio.com/gallery/genome-browser.html"><img src="https://i.imgur.com/e4vsPer.png" title="Mapping Genomes" /></a>
+
+## __Cons__
+
+### Learning Curve
+
+While R is a relatively simple language to operate in, it is still it's own programming language. Learning R and the framework for Shiny can take some time, even more if you wish to learn to build an visual geom mapper from scratch.
+
+### Limited comapred to JavaScript
+
+R-Shiny provides a relatively simple way to create web-apps to share visuals and analysis, however many of the greatest visual tools are contained within JavaScript. Many of the most advanced R web-visualizations are wrappers around JavaScript. There are many great visuals that JavaScript has in D3 that R does not have a package for. 
+
+
+
+
+
+
+
+
+R visualization packages
+
