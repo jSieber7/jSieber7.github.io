@@ -4,8 +4,6 @@ classes:
   - wide
 ---
 
-
-# Work in Progress
 ### *Jacob Sieber*
 ### *April 12, 2018*
 
