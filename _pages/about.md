@@ -14,6 +14,8 @@ I hold a degree in finance and am a current masters student at UNC Charlotte. I 
 
 
 ## Datacamp
+
+
 [Intro to Python for Data Science Course](https://www.datacamp.com/statement-of-accomplishment/course/6762861b54674024f0f4173b4133b504cc0724c3)
 
 [Intermediate Python for Data Science Course](https://www.datacamp.com/statement-of-accomplishment/course/ad79ae284b03d7f84b2d00069afcdd9a0eff708b)
