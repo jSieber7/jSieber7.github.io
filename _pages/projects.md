@@ -19,3 +19,5 @@ The accompanying Python scripts for an assigned project about predicting loan st
 This is a small Shiny App that visually describes Kagglers from the Kaggle Survey 2017.
 
 [Kaggler Shiny App](/shiny/)
+
+[TEST](/_pages/Beer_map/)
