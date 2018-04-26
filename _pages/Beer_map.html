@@ -1,3 +1,11 @@
+---
+layout: splash
+title: "Posts by Collection"
+permalink: /beer/
+author_profile: true
+---
+
+
 <!doctype html>
 
 <html lang="en">
@@ -75,7 +83,7 @@
     //
     //
     // load GeoJSON from an external file
-    $.getJSON("data/Beers_Data.geojson",function(data){
+    $.getJSON("https://raw.githubusercontent.com/jSieber7/jsieber7.github.io/master/_pages/data/Beers_Data.geojson",function(data){
         var beerIcon = L.icon({
             iconUrl: 'data/beer.png',
             iconSize: [25,20]
@@ -113,7 +121,7 @@
 
 
 
-    $.getJSON("data/State Consumption.geojson",function(ConsumptionData){
+    $.getJSON("https://raw.githubusercontent.com/jSieber7/jsieber7.github.io/master/_pages/data/State%20Consumption.geojson",function(ConsumptionData){
         L.geoJson( ConsumptionData  , {
             style: function(feature){
                 var fillColor = getColor(feature.properties.HouseAverage)

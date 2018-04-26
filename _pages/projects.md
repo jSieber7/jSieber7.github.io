@@ -20,4 +20,4 @@ This is a small Shiny App that visually describes Kagglers from the Kaggle Surve
 
 [Kaggler Shiny App](/shiny/)
 
-[TEST](/_pages/Beer_map/)
+[TEST](/beer/)
