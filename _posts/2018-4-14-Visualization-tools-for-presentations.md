@@ -101,9 +101,7 @@ R-Shiny provides a relatively simple way to create web-apps to share visuals and
 
 <a href="https://www.javascript.com/"><img src="https://i.imgur.com/hR3vzAQ.png" title="JavaScript" /></a>
 
-The reigning king of web visualization. Through JavaScript and D3, one of a kind visualizations can be created in an open source environment. JavaScript has an incredible amount of libraries that can be utilized in order to get the right visual 
-
-Whenever you see an interactive visual 
+The reigning king of web visualization. Through JavaScript and D3, one of a kind visualizations can be created in an open source environment. JavaScript has an incredible amount of libraries that can be utilized in order to get the right interactive visual for your specific need. There is no more utilized tool across professional visuals.
 
 ## __Pros__
 
@@ -131,5 +129,5 @@ JavaScript isn't a terriblly difficult language to learn, however it will take t
 
 # Conclusion
 
-As seen throughout the post, different data visualization tools have different strengths and weakness. Moreover, these different tools can be integrated with each other. This allows the different strengths of these tools to complement one another and weakness to be compensated for. Ideally, someone well versed in visualization would have a brief working knowledge with these tools.
+As seen throughout the post, different data visualization tools have different strengths and weakness. Moreover, these different tools can be integrated with each other. This allows the different strengths of these tools to complement one another and weakness to be compensated for. Ideally, someone well versed in visualization would have a brief working knowledge with all of these tools.
 

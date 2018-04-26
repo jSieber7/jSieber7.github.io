@@ -4,8 +4,6 @@ permalink: /projects/
 title: "Projects"
 ---
 
-Right now, there are two projects available to take a look at.
-
 ## Predicting Loan Status
 
 The accompanying Python scripts for an assigned project about predicting loan status. The data is from Lending Club, which is a popular peer to peer lending service. The goal of this project was to predict the loan status based upon given features.
