@@ -57,7 +57,7 @@ That being said, Tableau has deep integration with the programing language R. Th
 
 ### Lack of Coding Interface
 
-While the GUI interface is the pivotal selling point of Tableau, designing through a purely visual interface can frustrate many coders. While the GUI is fantastic for quickly creating visuals, it doesn't have the expressive power of a solid programming language. So, 'going of the rails' of what Tableau's developers initialy designed can be a fairly frustrating process. However, very impressive visualizations that are wholly unique and creative are still made on Tableau, just a at a lessor rate than programing languages.
+While the GUI interface is the pivotal selling point of Tableau, designing through a purely visual interface can frustrate many coders. While the GUI is fantastic for quickly creating visuals, it doesn't have the expressive power of a solid programming language. So, 'going of the rails' of what Tableau's developers initialy designed can be a fairly frustrating process. However, very impressive visualizations that are wholly unique and creative are still made on Tableau, just a at a lessor rate than programing languages. However, Tableau does have very strong integration with R and Python, allowing a user to do data manipulation and modeling easily within Tableau Desktop.
 
 ## __Honorable Mention__
 
@@ -119,15 +119,14 @@ Compared to other tools such as R, Python, or Tableau, JavaScript has more compr
 ## __Cons__
 
 
-### Lack of true data anylsis tools
+### Lack of true data analysis tools
 
-While JavaScript does a few libraries decicated to munging through data, true data anaylsis must be done through other means, such as R or Microsoft Azure. There is no nice visual integrations with model building here. Decicating the time to learning a new software language purely for web-interactive visualizations may not be the best use of time for someone who is busy, espcially since many of the several popular JavaScript visualizations retain most of their functionailty through R.
+While JavaScript does a few libraries decicated to munging through data, true data anaylsis must be done through other means, such as R or Microsoft Azure. There is no nice visual integrations with model building here. Decicating the time to learning a new software language purely for web-interactive visualizations may not be the best use of time for someone who is busy, especially since many of the several popular JavaScript visualizations retain most of their functionailty through R.
 
 ### Learning Curve
 
-JavaScript isn't a terriblly difficult language to learn, however it will take time to become accusomed to creating visualizations. Custom built visuals in D3 can often times contain a great deal of code, and require a deep understanding of the D3 framework. While JavaScript does have some utility useful outside of visualizations, it is mostly in web-development. So, analysts may not be able to get as much milage out of JavaScript as they could with R, Python, or Java.
+JavaScript isn't a terriblly difficult language to learn, however it will take time to become accustomed to creating visualizations. Custom built visuals in D3 can often times contain a great deal of code and require a deep understanding of the D3 framework. While JavaScript does have some utility outside of visualizations, it is mostly in web-development. So, analysts may not be able to get as much milage out of JavaScript as they could with R, Python, or Java.
 
 # Conclusion
 
 As seen throughout the post, different data visualization tools have different strengths and weakness. Moreover, these different tools can be integrated with each other. This allows the different strengths of these tools to complement one another and weakness to be compensated for. Ideally, someone well versed in visualization would have a brief working knowledge with all of these tools.
-
