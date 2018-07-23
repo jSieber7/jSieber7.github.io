@@ -1,4 +1,8 @@
-# Certifications
+---
+layout: single
+permalink: /certifications/
+title: "Certifications"
+---
 
 ## Coursera
 
