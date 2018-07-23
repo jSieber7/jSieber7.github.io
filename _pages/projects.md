@@ -12,10 +12,8 @@ The accompanying Python scripts for an assigned project about predicting loan st
 
 [Part 2: Modeling](/model/)
 
-## Shiny App: Kaggler Survey 
+## Shiny App: Kaggler Survey
 
 This is a small Shiny App that visually describes Kagglers from the Kaggle Survey 2017.
 
 [Kaggler Shiny App](/shiny/)
-
-
