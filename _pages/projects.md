@@ -18,8 +18,4 @@ This is a small Shiny App that visually describes Kagglers from the Kaggle Surve
 
 [Kaggler Shiny App](/shiny/)
 
-## JavaScript Map
 
-An interactive map showing all of the different craft beers across the United States and the amount of money spent on beer for each state.
-
-[Craft Beer Across the US](/beer/)
