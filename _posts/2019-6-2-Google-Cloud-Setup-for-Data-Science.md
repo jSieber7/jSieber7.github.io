@@ -29,7 +29,7 @@ Tired of frying your laptop and waiting days to train that sweet neural network?
 
 [Link](https://code.visualstudio.com/). VSCode with the Remote Development Extension is an easy to set up tool that offers an incredible amount of functionality. This functionality is namely: multiple integrated terminals, click and drag to move files from client to host / vice versa, and the most popular IDE (according to Stack Overflow survey 2019). It is advertised as being a local development experience when working on the cloud. One of the other great features of coding with VSCode is that during periods of cloud instability - you won't lose progress and can still code (without code output). After downloading VSCode, you want to install the Remote Development Extension as seen below.
 
-<img src="https://i.imgur.com/4doiLst" title="VS Code Setup"/>
+<img src="https://i.imgur.com/4doiLst.png" title="VS Code Setup"/>
 
 * If you are using Windows, you also want to bind SSH to the command line by opening up PowerShell as administrator and typing in ``Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0``. This allows VSCode to use SSH commands. *
 
@@ -41,7 +41,7 @@ Tired of frying your laptop and waiting days to train that sweet neural network?
 
 If you haven't already, you want to create an account on [https://cloud.google.com/](https://cloud.google.com/) . By using the trial on Google Cloud, the functionality on Google Cloud will be free to use until you reach your $300 limit or have your account for over a year. First things first, projects are a way to keep settings separate across multiple cloud projects. The new project button is in the top left, as seen in the image below.
 
-<img src="https://i.imgur.com/VCOdUnn" title="New Project"/>
+<img src="https://i.imgur.com/VCOdUnn.png" title="New Project"/>
 
 Projects in Google Cloud are typically used to manage permissions and resource allocation. For example, a data scientist may have a project with admin permissions for several co-workers and have another project where she is the only person with admin rights. If you are only working by yourself, one project will be adequate.
 
@@ -49,7 +49,7 @@ The three stacked bars in the top left will allow you navigate through the diffe
 
 A graphics card will be necessary to train models like neural networks in a reasonable amount of time. In order to get access to graphics card on Google Cloud: Go to the quotas section type in `GPUs all regions` in the metrics box and be sure to check it in the services. Mouse up to `Edit Quotas`  and increase the quota limit to 1. Submit the request and Google will increase your quota after approval.
 
-<img src="https://i.imgur.com/RykPWUj" title="Quotas"/>
+<img src="https://i.imgur.com/RykPWUj.png" title="Quotas"/>
 
 Now it's time to create the instance through the Google Cloud SDK installed on your local machine. If you chose to put Google Cloud SDK on your path during installation, you can do this from the command line. To get your default configuration type in:
 
@@ -75,17 +75,17 @@ Next we need to a few additional configurations to our instance and our project.
 
 First go to the External IP addresses and set a static IP address, be sure to attach this IP address to the virtual machine that you made by clicking the `In use by` column of the reserved address. We do this so the address of the instance does not change every time we reboot the instance.
 
-<img src="https://i.imgur.com/5xK79F4" title="Static Address"/>
+<img src="https://i.imgur.com/5xK79F4.png" title="Static Address"/>
 
 Next go to firewall rules and add a new rule. Name the new rule, and then make sure you set `Targets` to be 'All instances in the network', `Source IP ranges` to be 0.0.0.0/0 and `Protocols and ports` to be specified protocols and ports with tcp:8888. This allows us to get past the firewall of the virtual machine.
 
-<img src="https://i.imgur.com/n9UpgEV" title="Firewall Rule"/>
+<img src="https://i.imgur.com/n9UpgEV.png" title="Firewall Rule"/>
 
 ### Checking the Virtual Machine
 
 The Virtual Machine instance page is the page that you will most likely visit the most. This is where you can turn off / on the virtual machine and change some of the settings of the virtual machine.
 
-<img src="https://i.imgur.com/RU4IlD3" title="VM instances"/>
+<img src="https://i.imgur.com/RU4IlD3.png" title="VM instances"/>
 
 Go to the Compute Engine tab. Under this tab go to VM instances. You should see the VM instance that you created. If you do not see it, make sure you are in the right project. Click on the name of your project to get the configuration options for the instance. Here you can configure almost everything on your instance. Go down to Firewalls and check that `Allow HTTP traffic` and `Allow HTTPS traffic` are both checked.  This allows us to visit our instance through a web browser.
 
