@@ -99,11 +99,15 @@ We can now configure Jupyter Notebooks to use the virtual machine's resources wh
 
 First, let's configure Jupyter for remote access. Type in the following command:
 
-``` $ jupyter notebook --generate-config  # generates config file```
+``` 
+$ jupyter notebook --generate-config  # generates config file
+```
 
 It will return the location of the configuration file. Copy the location to the clipboard and type the command below while pasting the location given:
 
-``` $ nano {COPIED_CONFIG_PATH} # opens a text editor on the config file```
+```
+ $ nano {COPIED_CONFIG_PATH} # opens a text editor on the config file
+ ```
 
 This will open up the in terminal text editor. Now type in the code as specified in the image below.
 
@@ -172,7 +176,7 @@ $ ssh-add c:/Users/jack/.ssh/jack_laptop
 
 Now open up the ``.pub`` file and copy the text it to the clipboard. Next navigate back to the Google Cloud Platform website. Under the Compute Engine section, there is a section called Metadata. Navigate to that page. Click the `Edit` button and then paste your key in the key data spot.  At the end you should have something similar to the image below:
 
-<img src="https://i.imgur.com/6K2kvOY" title="SSH Key"/>
+<img src="https://i.imgur.com/6K2kvOY.png" title="SSH Key"/>
 
 
 You also want to take that same public key and associate it with your GitHub account. To do this go to settings and then go to the SSH and GPG keys section. Press the New SSH key button, name your key, and then paste your public key again.
