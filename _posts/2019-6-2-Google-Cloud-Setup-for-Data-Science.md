@@ -41,7 +41,7 @@ Tired of frying your laptop and waiting days to train that sweet neural network?
 
 If you haven't already, you want to create an account on [https://cloud.google.com/](https://cloud.google.com/) . By using the trial on Google Cloud, the functionality on Google Cloud will be free to use until you reach your $300 limit or have your account for over a year. First things first, projects are a way to keep settings separate across multiple cloud projects. The new project button is in the top left, as seen in the image below.
 
-<img src="https://i.imgur.com/VCOdUnn.png" title="New Project"/>
+<img src="https://i.imgur.com/0WDplo8.png" title="New Project"/>
 
 Projects in Google Cloud are typically used to manage permissions and resource allocation. For example, a data scientist may have a project with admin permissions for several co-workers and have another project where she is the only person with admin rights. If you are only working by yourself, one project will be adequate.
 
@@ -61,9 +61,9 @@ You will be asked to log in and set your defaults.
 
 After you get the SDK tool set-up, you want to create your own virtual machine in order to host your super-charged data science platform. You can do this with a single command with customized arguments to suit your specific needs. The example I use here is based off the [fast.ai instructions]([https://course.fast.ai/start_gcp.html](https://course.fast.ai/start_gcp.html)) and shown below:
 
-``
+```
 $ gcloud compute instances create deep-learning --zone=us-east1-b --image-family=pytorch-latest-gpu --image-project=deeplearning-platform-release --maintenance-policy=TERMINATE --accelerator="type=nvidia-tesla-p100,count=1" --boot-disk-size=200GB --metadata="install-nvidia-driver=True" --tags http-server,https-server --preemptible
-``
+```
 
 The `--preemptible` argument at the end of the command means that our instance can be shut down by Google if there is a resource strain and can only last 24 hours, but this also means that our virtual machine is much less expensive to run. By using a preemptible instance, a reasonable amount of storage, and *shutting down the instance once you are done*, the $300 dollars in free credit will be more than enough for months’ worth of projects. Storage tends to cost the most in the long run, so be sure not to get too excessive on the storage space. On this type of instance, you can always decide to increase the size of the boot disk (i.e. default disk), but it is much more difficult to decrease the amount of storage space used by an instance.
 
@@ -117,41 +117,28 @@ Now, let's give Jupyter Notebooks a quick test. Type in `Jupyter Lab` (or `Jupyt
 
 Having multiple environments helps prevent conflicts and bloated python executables. An example on how to use Anaconda to create a virtual environment for deep learning in Jupyter Notebooks is below.
 
-``
-
+```
 $ conda create -n deep_learning
-
 $ conda activate deep_learning
-
 $ conda install -c pytorch pytorch-cpu torchvision --y
-
 $ conda install -c fastai --y
-
 $ conda install jupyter --y
-
 $ python -m ipykernel install --user --name deep_learning --display-name "Deep_Learning"
 
-``
+```
 
 #### Suggested Project Folder Setup
 
 If you want more than a single project, it is a good idea to set up a project folder. An example of making a project folder and creating a new project is below.
 
 ```
-
 $ mkdir projects  #mkdir makes directories
-
 $ cd projects  #cd navigates inside of a directory
-
 $ mkdir TwiceML
-
 $ cd TwiceML
-
 $ mkdir jupyter_notebooks data
-
 $ cd ..
-
-``
+```
 
 # Step 3: SSH Keys, GitHub Backups, and Remote VSCode
 
@@ -163,11 +150,11 @@ We will two public/ private key pairs. The first pair will verify our local mach
 
 First, on your local computer open Git Bash and enter the command ``ssh-keygen``. You will be prompted for the desired path of your newly generated SSH keys. The path I used is ``c:/Users/jack/.ssh/jack_laptop``.  At the location of you specified for your SSH keys, you should find two files. For me, the files are named ``jack_laptop`` and ``jack_laptop.pub``. These two files are the private key and the public key, respectively.
 
-``
+```
 $ ssh-keygen
 $ Generating public/private rsa key pair.
 $ Enter file in which to save the key (/c/Users/jack/.ssh/id_rsa): c:/Users/jack/.ssh/jack_laptop
-``
+```
 
 You want Git on your computer to associate this private/ public key paring whenever you try to work with a remote repository. To do this first ensure that your SSH-agent is running. You can do this by typing in:
 
@@ -183,7 +170,8 @@ $ ssh-add c:/Users/jack/.ssh/jack_laptop
 
 Now open up the ``.pub`` file and copy the text it to the clipboard. Next navigate back to the Google Cloud Platform website. Under the Compute Engine section, there is a section called Metadata. Navigate to that page. Click the `Edit` button and then paste your key in the key data spot.  At the end you should have something similar to the image below:
 
-https://i.imgur.com/6K2kvOY
+<img src="https://i.imgur.com/6K2kvOY" title="SSH Key"/>
+
 
 You also want to take that same public key and associate it with your GitHub account. To do this go to settings and then go to the SSH and GPG keys section. Press the New SSH key button, name your key, and then paste your public key again.
 
@@ -191,12 +179,12 @@ You also want to take that same public key and associate it with your GitHub acc
 
 Now the public/private key that you made has access to your virtual machine. Open visual studio code, press `F1` and type in remote-ssh and then go to `Remote-SSH: Open Configuration File`.  Here you see your settings. Now specify the settings like so:
 
-``
+```
 Host Deeplearning  # Name
 HostName 34.74.32.141  # Virtual Machine IP
 User jack_laptop # Username made in Compute Engine - Metadata
 IdentityFile C:\Users\jack\.ssh\jack_laptop.ppk # Location of the private key
-``
+```
 
 Now by using the explorer bar, clicking the SSH icon,  and right clicking the name you specified in the configuration file, you can connect to the virtual machine just as you would your own computer. You can even use all of your extensions. The most popular extension for data science is the Python extension, which is able to run python scripts as if they were jupyter notebooks. Due to the way the SSH tunneling works, you can even transfer files via click and drag in between the computer and the instance by using the explorer window.
 
@@ -206,14 +194,14 @@ Now, we want to make SSH keys for our virtual machine and connect both of the vi
 
 While still in VSCode, press `F1` and type in `Open New Terminal` and press enter. A terminal will pop up on the bottom of the screen. This terminal has the same sort of access as the SSH client we used from the Google Cloud Console. Just as before, type in ``ssh-keygen`` and specify the desired path for your keys. This time, I specified the path ~/.ssh/vm_deep_learning `. Also, be sure to also add the ssh key to git
 
-``
+```
 $ ssh-keygen
 $ Generating public/private rsa key pair.
 $ Enter file in which to save the key (/home/jack/.ssh/id_rsa): ~/.ssh/vm_deep_learning
-`
-``
+```
+```
 $ ssh-add ~/.ssh/vm_deep_learning
-``
+```
 
 Now use the command:
 
@@ -227,15 +215,13 @@ This will show the public key in the terminal. Copy this key to the clipboard. I
 
 We are finally done configuring our virtual machine to work well with our local machine! In order to use Git to back up our code, it is helpful to get familiar with the common Git commands. There is a cheat sheet [here](https://www.git-tower.com/blog/git-cheat-sheet) that has served me well in the past. Don't forget to put your data/ folder in .gitignore! The most used commands are:
 
-``
-
+```
 $ git init # Starts a new repository
 $ git clone # Clones an exsiting repository
 $ git add . # Adds in all of changes made for files
 $ git commit # Commits changes added
 $ git push # Pushes changes to github
 $ git pull # Pulls in changes from github
-
-``
+```
 
 Goodluck on all of your data science projects!
