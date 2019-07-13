@@ -3,13 +3,13 @@ layout: splash
 classes:
   - wide
 ---
-*Google Cloud Setup for Data Science.*
+#Google Cloud Setup for Data Science.
 ### *Jacob Sieber*
 ### *December 15, 2017 (Updated Feburary 27)*
 
 April 14th, 2019
 
-*Getting started with the ever popular $300 12-month Google Cloud for Data Science applications*
+*Getting started with the ever popular $300 12-month Google Cloud for data science applications.*
 
 Tired of frying your laptop and waiting days to train that sweet neural network? Want to freely use some of the latest and greatest hardware for data munging and modeling? Is your mother upset at the large power bill that your machine racks up training models? Well this post is for you. Google Cloud is offering a $300 12-month trial (a valid credit card is required) on all of its cloud services. This means that you can set up virtual machines with multiple CPUs, high memory, and powerful graphics cards while coding in a remote location for free. Because Google Cloud is vast in its functionality, it can be a little difficult to find direct, concise, and updated information about how to get Jupyter Notebooks and Python scripts set up. This post goes through how to get a setup on a customized Google Cloud machine that can service your data science needs. This is a windows tutorial, however it is quite easy to carry over the OS specific information across operating systems. We will create a Google Cloud instance with Anaconda, a graphics card, and Jupyter Notebooks that is connected to VSCode and Github.
 
