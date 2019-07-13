@@ -53,9 +53,9 @@ A graphics card will be necessary to train models like neural networks in a reas
 
 Now it's time to create the instance through the Google Cloud SDK installed on your local machine. If you chose to put Google Cloud SDK on your path during installation, you can do this from the command line. To get your default configuration type in:
 
-``
+```
 $ gcloud init
-``
+```
 
 You will be asked to log in and set your defaults.
 
@@ -105,7 +105,7 @@ It will return the location of the configuration file. Copy the location to the 
 
 This will open up the in terminal text editor. Now type in the code as specified in the image below.
 
-<img src="https://i.i.imgur.com/jbqSQva.png" title="Jupyter Config"/>
+<img src="https://i.imgur.com/jbqSQva.png" title="Jupyter Config"/>
 
 When you are done, press CTRL-X and then ENTER, this will take you back to the terminal. Be sure not to rename the file when you save. Our edits to the configuration file set a new default IP and tells Jupyter not to automatically open a browser on startup.
 
@@ -158,15 +158,15 @@ $ Enter file in which to save the key (/c/Users/jack/.ssh/id_rsa): c:/Users/jack
 
 You want Git on your computer to associate this private/ public key paring whenever you try to work with a remote repository. To do this first ensure that your SSH-agent is running. You can do this by typing in:
 
-``
+```
 $ eval $(ssh-agent -s)
-``
+```
 
 Next, add the SSH private key to the SSH-agent:
 
-``
+```
 $ ssh-add c:/Users/jack/.ssh/jack_laptop
-``
+```
 
 Now open up the ``.pub`` file and copy the text it to the clipboard. Next navigate back to the Google Cloud Platform website. Under the Compute Engine section, there is a section called Metadata. Navigate to that page. Click the `Edit` button and then paste your key in the key data spot.  At the end you should have something similar to the image below:
 
@@ -181,9 +181,9 @@ Now the public/private key that you made has access to your virtual machine. Ope
 
 ```
 Host Deeplearning  # Name
-HostName 34.74.32.141  # Virtual Machine IP
-User jack_laptop # Username made in Compute Engine - Metadata
-IdentityFile C:\Users\jack\.ssh\jack_laptop.ppk # Location of the private key
+    HostName 34.74.32.141  # Virtual Machine IP
+    User jack_laptop # Username made in Compute Engine - Metadata
+    IdentityFile C:\Users\jack\.ssh\jack_laptop.ppk # Location of the private key
 ```
 
 Now by using the explorer bar, clicking the SSH icon,  and right clicking the name you specified in the configuration file, you can connect to the virtual machine just as you would your own computer. You can even use all of your extensions. The most popular extension for data science is the Python extension, which is able to run python scripts as if they were jupyter notebooks. Due to the way the SSH tunneling works, you can even transfer files via click and drag in between the computer and the instance by using the explorer window.
@@ -192,7 +192,7 @@ Now by using the explorer bar, clicking the SSH icon,  and right clicking the na
 
 Now, we want to make SSH keys for our virtual machine and connect both of the virtual machine's and the local machine's keys to GitHub. Having the local machine's keys on GitHub will allow us to pull and push code in between the virtual machine, code saved on GitHub servers, and your local machine.
 
-While still in VSCode, press `F1` and type in `Open New Terminal` and press enter. A terminal will pop up on the bottom of the screen. This terminal has the same sort of access as the SSH client we used from the Google Cloud Console. Just as before, type in ``ssh-keygen`` and specify the desired path for your keys. This time, I specified the path ~/.ssh/vm_deep_learning `. Also, be sure to also add the ssh key to git
+While still in VSCode, press `F1` and type in `Open New Terminal` and press enter. A terminal will pop up on the bottom of the screen. This terminal has the same sort of access as the SSH client we used from the Google Cloud Console. Just as before, type in ``ssh-keygen`` and specify the desired path for your keys. This time, I specified the path `~/.ssh/vm_deep_learning`. Also, be sure to also add the ssh key to git
 
 ```
 $ ssh-keygen
@@ -205,9 +205,9 @@ $ ssh-add ~/.ssh/vm_deep_learning
 
 Now use the command:
 
-``
+```
 $ cat ~/.ssh/vm_deep_learning.pub # Second argument is the path of the public key
-``
+```
 
 This will show the public key in the terminal. Copy this key to the clipboard. In the same way as before, we can also add this key to our GitHub account.
 
