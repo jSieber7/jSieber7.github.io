@@ -62,7 +62,9 @@ You will be asked to log in and set your defaults.
 After you get the SDK tool set-up, you want to create your own virtual machine in order to host your super-charged data science platform. You can do this with a single command with customized arguments to suit your specific needs. The example I use here is based off the [fast.ai instructions]([https://course.fast.ai/start_gcp.html](https://course.fast.ai/start_gcp.html)) and shown below:
 
 ```
-$ gcloud compute instances create deep-learning --zone=us-east1-b --image-family=pytorch-latest-gpu --image-project=deeplearning-platform-release --maintenance-policy=TERMINATE --accelerator="type=nvidia-tesla-p100,count=1" --boot-disk-size=200GB --metadata="install-nvidia-driver=True" --tags http-server,https-server --preemptible
+$ gcloud compute instances create deep-learning --zone=us-east1-b --image-family=pytorch-latest-gpu --image-project=deeplearning-platform-release \
+--maintenance-policy=TERMINATE --accelerator="type=nvidia-tesla-p100,count=1" --boot-disk-size=200GB --metadata="install-nvidia-driver=True" \
+--tags http-server,https-server --preemptible
 ```
 
 The `--preemptible` argument at the end of the command means that our instance can be shut down by Google if there is a resource strain and can only last 24 hours, but this also means that our virtual machine is much less expensive to run. By using a preemptible instance, a reasonable amount of storage, and *shutting down the instance once you are done*, the $300 dollars in free credit will be more than enough for months’ worth of projects. Storage tends to cost the most in the long run, so be sure not to get too excessive on the storage space. On this type of instance, you can always decide to increase the size of the boot disk (i.e. default disk), but it is much more difficult to decrease the amount of storage space used by an instance.
