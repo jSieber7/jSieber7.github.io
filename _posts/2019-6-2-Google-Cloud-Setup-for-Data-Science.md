@@ -1,4 +1,11 @@
-# Google Cloud Setup for Data Science
+---
+layout: splash
+classes:
+  - wide
+---
+*Google Cloud Setup for Data Science.*
+### *Jacob Sieber*
+### *December 15, 2017 (Updated Feburary 27)*
 
 April 14th, 2019
 
