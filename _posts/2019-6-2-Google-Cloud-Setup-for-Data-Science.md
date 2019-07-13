@@ -3,7 +3,7 @@ layout: splash
 classes:
   - wide
 ---
-#Google Cloud Setup for Data Science.
+# Google Cloud Setup for Data Science.
 ### *Jacob Sieber*
 ### *December 15, 2017 (Updated Feburary 27)*
 
