@@ -3,9 +3,9 @@ layout: splash
 classes:
   - wide
 ---
-# Google Cloud Setup for Data Science.
+# Google Cloud Setup for Data Science. Setup for cloud Jupyter Notebooks, VSCode, and Github.
 ### *Jacob Sieber*
-### *December 15, 2017 (Updated Feburary 27)*
+### *June 2, 2019*
 
 April 14th, 2019
 
@@ -15,15 +15,15 @@ Tired of frying your laptop and waiting days to train that sweet neural network?
 
 *Remember two important rules when making projects in the cloud: backup your project code and turn off the virtual machine once you are done. *
 
-## Applications to Install on your Machine
+ns to Install on your Machine
 
 ### Google SDK Tool
 
-[Link]([https://cloud.google.com/sdk/](https://cloud.google.com/sdk/). The Google SDK Tool is the command line tool for Google Cloud. We will use this tool to create our virtual machine instance with all of the bells and whistles that we will need.
+[Link](https://cloud.google.com/sdk/). The Google SDK Tool is the command line tool for Google Cloud. We will use this tool to create our virtual machine instance with all of the bells and whistles that we will need.
 
 ### Git
 
-[Link]([https://git-scm.com/download](https://git-scm.com/download). Git is another command line tool that we will use briefly for generating our SSH keys and backing up the projects that are made on the cloud. Git is preinstalled in the virtual machine that we will create.
+[Link](https://git-scm.com/download). Git is another command line tool that we will use briefly for generating our SSH keys and backing up the projects that are made on the cloud. Git is preinstalled in the virtual machine that we will create.
 
 ### VSCode with the Remote Development Extension
 
@@ -47,7 +47,7 @@ Projects in Google Cloud are typically used to manage permissions and resource a
 
 The three stacked bars in the top left will allow you navigate through the different pages of Google Cloud. You can also use the search bar at the top of Google Cloud's pages in order to navigate the website.
 
-A graphics card will be necessary to train models like neural networks in a reasonable amount of time. In order to get access to graphics card on Google Cloud: Go to the quotas section type in `GPUs all regions` in the metrics box and be sure to check it in the services. Mouse up to `Edit Quotas`  and increase the quota limit to 1. Submit the request and Google will increase your quota after approval.
+A graphics card will be necessary to train models like neural networks in a reasonable amount of time. In order to get access to graphics card on Google Cloud: Go to the Quotas section under IAM & admin use the metric dropdown to get `GPUs all regions`. Be sure to check the service box beside the GPU (all regions) box. Mouse up to `Edit Quotas` and increase the quota limit to 1. Submit the request and Google will increase your quota after approval.
 
 <img src="https://i.imgur.com/RykPWUj.png" title="Quotas"/>
 
@@ -59,7 +59,7 @@ $ gcloud init
 
 You will be asked to log in and set your defaults.
 
-After you get the SDK tool set-up, you want to create your own virtual machine in order to host your super-charged data science platform. You can do this with a single command with customized arguments to suit your specific needs. The example I use here is based off the [fast.ai instructions]([https://course.fast.ai/start_gcp.html](https://course.fast.ai/start_gcp.html)) and shown below:
+After you get the SDK tool set-up, we can now create a virtual machine in order to host our super-charged data science platform. You can do this with a single command with customized arguments to suit your specific needs. The example I use here is based off the [fast.ai instructions](https://course.fast.ai/start_gcp.html) and shown below:
 
 ```
 $ gcloud compute instances create deep-learning --zone=us-east1-b --image-family=pytorch-latest-gpu --image-project=deeplearning-platform-release \
@@ -115,11 +115,11 @@ This will open up the in terminal text editor. Now type in the code as specified
 
 When you are done, press CTRL-X and then ENTER, this will take you back to the terminal. Be sure not to rename the file when you save. Our edits to the configuration file set a new default IP and tells Jupyter not to automatically open a browser on startup.
 
-Let's also set a password on Jupyter for convenience. Use the terminal command: `jupyter notebook password` and follow the instructions. This will save us time when have to open Jupyter Notebooks on the browser.
+Let's also set a password on Jupyter for convenience. Use the terminal command: ```jupyter notebook password``` and follow the instructions. This will save us time when have to open Jupyter Notebooks on the browser.
 
 Now, let's give Jupyter Notebooks a quick test. Type in `Jupyter Lab` (or `Jupyter Notebook` if you prefer the pure notebook version) and you will see Jupyter start up. Now, copy the External IP you see back on the Google Cloud VM instances page and navigate your browser to `{COPIED_EXTERNAL_IP} + :8888/`.  After you type in the password, you will now have a Jupyter Notebook in cloud.
 
-#### Creating an Anaconda Virtual Environment for Jupyter
+### Creating an Anaconda Virtual Environment for Jupyter
 
 Having multiple environments helps prevent conflicts and bloated python executables. An example on how to use Anaconda to create a virtual environment for deep learning in Jupyter Notebooks is below.
 
@@ -130,16 +130,15 @@ $ conda install -c pytorch pytorch-cpu torchvision --y
 $ conda install -c fastai --y
 $ conda install jupyter --y
 $ python -m ipykernel install --user --name deep_learning --display-name "Deep_Learning"
-
 ```
 
-#### Suggested Project Folder Setup
+### Suggested Project Folder Setup
 
 If you want more than a single project, it is a good idea to set up a project folder. An example of making a project folder and creating a new project is below.
 
 ```
-$ mkdir projects  #mkdir makes directories
-$ cd projects  #cd navigates inside of a directory
+$ mkdir projects  # mkdir makes directories
+$ cd projects  # cd navigates inside of a directory
 $ mkdir TwiceML
 $ cd TwiceML
 $ mkdir jupyter_notebooks data
@@ -174,7 +173,7 @@ Next, add the SSH private key to the SSH-agent:
 $ ssh-add c:/Users/jack/.ssh/jack_laptop
 ```
 
-Now open up the ``.pub`` file and copy the text it to the clipboard. Next navigate back to the Google Cloud Platform website. Under the Compute Engine section, there is a section called Metadata. Navigate to that page. Click the `Edit` button and then paste your key in the key data spot.  At the end you should have something similar to the image below:
+Now open up the ``.pub`` file and copy the text it to the clipboard. Next navigate back to the Google Cloud Platform website. Under the Compute Engine section, there is a section called Metadata. Navigate to that page. Click the `Edit` button and then paste your public key in the key data spot. At the end you should have something similar to the image below:
 
 <img src="https://i.imgur.com/6K2kvOY.png" title="SSH Key"/>
 
