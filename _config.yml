@@ -63,9 +63,9 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : jakestr9000
+  username               : # jakestr9000
 facebook:
-  username               : jacob.sieber.54
+  username               : # jacob.sieber.54
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
